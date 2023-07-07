@@ -31,6 +31,7 @@ public Chair()
 System.out.println("Chair Constructor");
 System.out.println("_________________");
 }
+//parameterised Constructor	
 public Chair(int m , int n){
 System.out.println(m);
 System.out.println(n);	
