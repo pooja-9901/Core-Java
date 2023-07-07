@@ -1,0 +1,219 @@
+                                                     Aptitude 
+													 
+1 b
+2 c
+3 d
+4 c
+5 b
+6 c
+7 c
+8 a
+9 b
+10 c
+11 a
+12 a
+13 d
+14 c
+
+                                                 Theory Questions
+
+1) Constructor
+-> Constructor is like method which is used to initialize the objects. Constructor will be executed whenever an object is created.
+There are two types of constructors
+Default constructor and Parameterised Constructor. Constructor name should be same as Class name.
+
+syntax: public constructor_name (){
+
+}		
+Ex: public class Student()
+{
+//Instance Variables
+int rollNumber;
+String name;
+float percentage;
+
+
+pubic Student(int rollNumber, String name,float percentage)  //Parameterised Constructor
+{
+
+this.rollNumber=rollNumber;
+this.name=name;
+this.percentage;
+
+}
+public static void main(String[] args){  // main method
+
+Student studen1 = new Student(100,"Akshata",80.9f);  //initializing variable using objects
+
+}
+
+}	
+
+2)Types of Constructor
+*Default Constructor/non argument Constructor
+*Parameterized Constructor
+
+Default Constructor
+-> Default constructor is inbulit constructor, whenever a class is created class loader will create default constrctor.
+Ex: public class House(){
+
+public static void main(String[] args)
+{
+House obj = new House();  //calling Default constructor using object.
+
+}
+
+}
+Parameterized Constructor
+-> The Constructor where the variables will be declared within parameters of the constructor is known to be Parameterised Constructor.
+Syntax:
+access_modifier(optional) constructor_name(Data_Type1 Variable_name1,Data_Type1 Variable_name2,...Data_Typen Variable_namen){
+}
+Ex:	
+public class House(){
+int noOfDoors;
+int noOfWindows;
+
+public static void main(String[] args)
+{
+
+public House(int noOfDoors,int noOfWindows,){
+
+ this.noOfDoors=noOfDoors;
+ this.noOfWindows=noOfWindows;
+}
+
+House obj = new House(3,8); //calling Parameterised constructor using object.
+
+}
+
+}	
+
+3) Object
+-> object is real world enetity,object is an instance of the class.
+whenever an oject is created an instance memory will be allocated. an oject will be created using new keyword.
+
+Syntax: class_name object_name = new class_name();
+
+Ex: public class Family(){
+public static void main(String[] args)
+{
+Family obj =  new Family();  //declring an object for class Family
+}
+
+}		
+
+4)Class
+-> Class is the blue print of an object. as java is object oriented hence it will work with classes and objects.
+class key word is used to declare a class. we need objects to access the class.
+class contains- methods, members of class constructor and etc.
+
+Syntax: acccess_modifier class class_name()	{
+}				 
+
+Ex: Public class Bike(){
+public static void main(String[] args)
+}
+
+5) Method Overloading
+-> Method overloading means having same Method name but differ in Parameters.
+The differ in parameter can be
+*change in number of parameters
+*change in type of parameters
+*change in order of parameters
+
+Ex:
+public class InterestCalculator()
+{
+public static void Interest(int amount,int interest){ //method declaration
+int TotalAmount;
+TotalAmount = amount+ interest * 100;
+}
+
+public static void Interest(int amount,float interest){
+float TotalAmount;
+TotalAmount = amount+ interest * 100;
+}
+
+public static void Interest(float amount,float interest){
+float TotalAmount;
+TotalAmount = amount+ interest * 100;
+}
+
+public static void main(String[] args)
+{
+int amount1 = Interest(1000,20);  accessing method and storing the value
+float amount2 = Interest(15000,15.4f);
+float amount3 = Interest(15000.0,15.4f);
+
+}
+
+}
+
+6)Variables
+-> variable is like container which is used to store the value using different datatypes.
+there are different types of variables
+*static
+*instance
+
+staic variable are used to store the values which is common to many objects.
+a statc varible will be initilalised once and accessed many times.it can be accessed whenever we want.
+
+instance variable:
+this is used to initialize or store the values and can be accessed throught the class, but to to access a instance variable we need object.
+
+7)this Keyword
+this keyword is used in constructor to differentiate between instance variables and variables used in constructor.
+if variable name are same as instance variable then this keyword is used. whenever we use this keyword compiler will know that the variable is class variable.
+
+ex: this.Varible1=Variable1;
+    
+8)String :
+String is nothing but set of Characters.It is A non Primitive datatype.
+String is immutable. String can accept space values.
+Ex: String name = "Pooja T";
+
+9)String Methods
+concatination- it will concatinate or join two string. the method will accept two string and attacth the second to first string.
+*String new = concatinate(str1,str2); 
+*split-it will split the string to spacified or mentioned value,example if we spacify to split string when there is space it will plit when there is a space.
+*length- it will return the legth of the String.
+*int length=strlength(String);
+*toUppercae- it will make all the characters in string to upper case.
+*toLowercase-it will make all the characters in string to lower case.
+*String array- it will create an array of string from the given string.
+
+10) string is non primitive Data Type which cannot be immutable because all or whole set of characters will be stored in one memory place and cannot modify any characters in that string.
+
+
+                                             Programmin
+
+2)pubic class Watch(){
+int price;
+String color;
+String occation;
+
+public Watch(int price,String color,String occation){
+this.price=price;
+this.color=color;
+this.occation=occation;
+}
+public staic void main(String[] args){
+
+Watch obj = new Watch(2000,"Black",casual)
+}
+
+}
+
+4)public class Reverse(){
+
+public static void main(String[] args)
+{
+
+int[] number = {10,20,30,40};
+for (int i=4;i<4;i--){
+System.out.println(number[i]);
+}
+
+}
+}
