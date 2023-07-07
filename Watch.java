@@ -1,6 +1,6 @@
 public class Watch{
 	
-//Static Variaables
+//Static Variables
 static String WatchType;
 static String DisplayType1;
 static String DisplayType2;
@@ -14,7 +14,8 @@ String strapType;
 String Color;
 int price;
 String brand;
- 
+
+//Static Block
 static{
 	 DisplayType1="Digital";
 	 DisplayType2="Analog";
@@ -23,7 +24,7 @@ static{
 	 For2="Girls";
 	 occation="Casual";
 }
-
+//Constructor
 public Watch(int Warranty, String strapType, String Color, int price, String brand){
 	//
 	this.Warranty=Warranty;
