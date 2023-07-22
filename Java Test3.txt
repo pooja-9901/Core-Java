@@ -1,0 +1,196 @@
+                                                                       Java Test 
+                                                          NAME: Pooja Tilagul        DATE:22/7/2023
+
+1) Error 
+We get Error in this Code Because value After increament for x=10 and y=31 But We cannot add "" value with the Integer value its Invalid.
+
+2) Error 
+
+3) Answer = 50
+
+4)Error Because Here we cannot call Using class name, we should always put cdoe in method and call using method name to acces values.
+
+5) Method Parameters: There are two ways to declare a method 
+*Parametrised And non Argumented
+In parameterised Method we have can declare the parameter which means varibles in a method braces.
+Syntax: access_spacifier Return_type Method_name(Data_Type var_name , Data_Type var_name ,...)
+{
+
+}
+Above is the basic Syntax of Parametrised Method Declaration and the Variables inside the Braces we call As parameters.
+to call the method in the main method we need to pass the values according to order of the varibles we declared while declaring the method.
+The number value passing should be equals to the variables or the parameters declared in the method.
+EX:
+public class Add{
+ public int Add(int a,int b)
+{
+int c=a+b;
+return c;
+}
+public static void main(Sting[] args)
+{
+add(10,20);
+add(4,0);
+}
+}
+
+7) Compile Time Polymorphism
+We can Achieve Compile Time Polymorphism Using Method Overloading Concept in Java.
+When we give the same method name and change the values or order or the number of parameters in a method of same class we cll it as a method overloading or compile time polymorphism.
+Example:
+public class GreaterNumber{
+
+public void gretestNumber(int a, int b)
+{
+if(a>b){
+System.out.println("A is gretest Number");
+}
+else
+{
+System.out.println("B is gretest Number");
+}
+}
+
+public void gretestNumber(int a, int b, int c)
+{
+if(a>b && a>c){
+System.out.println("A is gretest Number");
+}
+else if(b>a && b>c)
+{
+System.out.println("B is gretest Number");
+}
+else{
+System.out.println("C is gretest Number");
+}
+
+public static void main(Sting[] args)
+{
+gretestNumber(10,20);
+gretestNumber(4,0,5);
+}
+}
+
+8)Var-args
+Var-args in java is Variable arguemnts which are used to declare the variable with number of arguemnts.
+it is used in method declaring, it will solve the problem of assigning value to same variable multiple times, which is space-reducing.
+Syntax : Public Method_name(Data_type....Variable_name)
+
+9)Package in Java
+-> It is in the real world basically a path that contains the folders, It is used to collect or Group all the related classes or folders together.
+Ex: com.xworkz.students the example of a package where student class is inside xworkz and xworkz is inside the com folder dot(.) will show it is connected or it's inside that folder.
+
+Import: Import is a keyword in java which is used to import classes,interface,or a package from other packages if its accessible.
+
+10) Constructor Chaining
+->Constructor chaining is calling one constructor in other constructor using the current object.
+we can do constructor chaining in same class using 'this' keyword also from base class using super() keyword.
+
+Ex: public class Adder{
+public Add(int x)
+{
+Add();
+System.out.println("Calling Default Constructor");
+}
+
+public Add(int x,int y){
+Add(5);
+}
+
+public Add(int x,int y,int z){
+Add(5, 10);
+}
+
+ public static void main(String[] args)
+{
+Add add = new Add(1,3,7);
+}
+}
+
+12) To check if the list of integers containing numbers has only odd numbers
+
+we know the formula to check if numer is even or odd That is if Given_number reminder is not 0 then we say that its a odd number.
+
+Program:
+public class OddNumberChecker{
+public static void main(String[] args)
+{
+int[] Array = {1,3,2,5,4};
+for (int i=0;i<=length.Array;i++)
+{
+if(Array[i]%2!0){
+continue;
+}
+else{
+System.out.println("The list does not contain only odd Numbers")
+}
+break;
+}
+}
+
+13)Program
+Public class Java{
+int[] Roll_numbers={101,102,103,104,105};
+int[] Attended_Roll_numbers={102,103,104};
+
+public static boolean checkEqual(int[] Roll_numbers, int[] Attended_Roll_numbers) {
+        
+        if (Roll_numbers.length != Attended_Roll_numbers.length) {
+            return false;
+        } else {
+            for (int i = 0; i < Roll_numbers.length; i++) {
+                if (Roll_numbers[i] != Attended_Roll_numbers[i])
+                    return false;
+            }
+        }
+
+        return true;
+    }
+public static void main(String[] args)
+{
+if (checkEqual(Roll_numbers, Attended_Roll_numbers)) {
+            System.out.println("Array are equal");
+        } else {
+            System.out.println("Array not equal");
+        }
+
+        
+
+    }
+}
+
+14)
+enumeration: enumeration is the extended name for the enum.
+enum is a special type of class that is used to define constant values in java.we can declare the enum in class using keyword enum. enum does not have any data type for the values stored.
+
+Ex: public class Car{
+
+enum color {
+RED, BLUE,BLACK;
+}
+
+public static void main(String[] , args)
+{
+Color color = new color.RED;
+System.out.println(color);
+}
+}
+
+15) Whenever an object is created the JVM will create an instance memory in stack memory it will reserve some portion of memory for the objects.
+
+16) Members of the class
+members of a class are
+*variables
+*Methods
+*constructors
+*objects
+*some inbuilt functions or methods like println() and more.
+
+
+
+
+
+
+
+
+
